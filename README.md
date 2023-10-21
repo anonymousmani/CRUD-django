@@ -1,4 +1,4 @@
-# Single Page CRUD Application with Database Integration
+## Single Page CRUD Application with Database Integration ##
 
 Welcome to the Single Page CRUD Application repository! This project showcases a simple yet powerful web application that allows users to perform Create, Read, Update, and Delete (CRUD) operations on data seamlessly. Built with a database backend, this project provides a single-page interface for managing information efficiently.
 
@@ -41,11 +41,11 @@ Welcome to the Single Page CRUD Application repository! This project showcases a
 
 This project is built using a modern technology stack that may include:
 
-- **Front-End**: HTML, CSS, JavaScript, and possibly a JavaScript framework like React, Vue, or Angular for a dynamic user interface.
+- **Front-End**: HTML, CSS for a dynamic user interface.
 
-- **Back-End**: A server-side scripting language like Python (Flask or Django), Node.js, Ruby (Ruby on Rails), or others to handle database operations.
+- **Back-End**: A server-side scripting language like Python , Django to handle database operations.
 
-- **Database**: A relational database management system (RDBMS) such as SQLite, MySQL, PostgreSQL, or a NoSQL database like MongoDB.
+- **Database**: A relational database management system (RDBMS) such as SQLite.
 
 ## Contribution
 
@@ -67,6 +67,7 @@ This project is open source and licensed under the MIT License. See the [LICENSE
 
 For any questions or inquiries, please reach out to the project maintainers:
 
-- [Your Name](https://github.com/yourusername)
+- [GITHUB](https://github.com/anonymousmani)
+- - [INSTAGRAM](https://instagram.com/x_ploits)
 
 Manage and manipulate your data with ease using the Single Page CRUD Application with Database Integration. Enjoy a seamless experience for creating, reading, updating, and deleting data while harnessing the power of a database backend.
