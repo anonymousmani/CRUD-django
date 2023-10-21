@@ -1,4 +1,4 @@
-# Single Page**CRUD Application**with Database Integration #
+# Single Page **CRUD Application** with Database Integration #
 
 Welcome to the Single Page CRUD Application repository! This project showcases a simple yet powerful web application that allows users to perform Create, Read, Update, and Delete (CRUD) operations on data seamlessly. Built with a database backend, this project provides a single-page interface for managing information efficiently.
 
