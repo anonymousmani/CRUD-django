@@ -1,4 +1,4 @@
-## Single Page CRUD Application with Database Integration ##
+# Single Page**CRUD Application**with Database Integration #
 
 Welcome to the Single Page CRUD Application repository! This project showcases a simple yet powerful web application that allows users to perform Create, Read, Update, and Delete (CRUD) operations on data seamlessly. Built with a database backend, this project provides a single-page interface for managing information efficiently.
 
@@ -30,7 +30,7 @@ Welcome to the Single Page CRUD Application repository! This project showcases a
 
 3. Set up the necessary database (e.g., SQLite, MySQL, PostgreSQL) and configure the database connection in the project.
 
-4. Run the application, typically via a web server or framework (e.g., Django).
+4. Run the application, typically via a web server or framework (e.g. Django).
 
 5. Access the single-page application in your web browser and start adding, displaying, updating, and deleting data.
    ```browser
