@@ -1,5 +1,5 @@
 from django.shortcuts import render
-#from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect
 from enroll.form import userform
 from enroll.models import user
 
@@ -19,8 +19,9 @@ def add_show(request):
           reg = user(name=nd, email=em, password=pd)
           reg.save()
           fm = userform()
-          stu = user.objects.all()
-          return render(request, 'enroll/addandshow.html', {'form':fm ,'stub':stu})
+          return HttpResponseRedirect('/')
+          #stu = user.objects.all()
+          #return render(request, 'enroll/addandshow.html', {'form':fm ,'stub':stu})
           #return render(request, 'enroll/success.html')
     else:
       fm = userform()
