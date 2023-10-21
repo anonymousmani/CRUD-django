@@ -68,6 +68,6 @@ This project is open source and licensed under the MIT License. See the [LICENSE
 For any questions or inquiries, please reach out to the project maintainers:
 
 - [GITHUB](https://github.com/anonymousmani)
-- - [INSTAGRAM](https://instagram.com/x_ploits)
+- [INSTAGRAM](https://instagram.com/x_ploits)
 
 Manage and manipulate your data with ease using the Single Page CRUD Application with Database Integration. Enjoy a seamless experience for creating, reading, updating, and deleting data while harnessing the power of a database backend.
