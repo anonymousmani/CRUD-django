@@ -4,4 +4,4 @@ from enroll.models import user
 # Register your models here.
 @admin.register(user)
 class useradmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'password')
+    list_display = ('id', 'name', 'email', 'password')
