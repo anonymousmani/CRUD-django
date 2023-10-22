@@ -1,31 +1,55 @@
 {% extends "enroll/base.html" %}
 {% block content %}
-<h4 >add new student</h4>
-    <form action="" method="post">
+<div class="row">
+    <div class="col-sm-4">
+        <h4  class="text-center alert alert-info">Add new Student</h4>
+        <form action="" method="post">
          {% csrf_token %}
          {{form.as_p}}
-         <input type="submit" value="submit">
-    </form>
-<h1>show student information</h1>
-<h2>Table Data</h2>
-{% if stub %}
-    <table class="table table-hover">
-        <tr>
-            <th scope='col'>Name</th>
-            <th scope='col'>Email</th>
-            <th scope='col'>Password</th>
-        </tr>
-        {% for s in stub  %}
-        <tr>
-            <td scope='row'>{{s.name}}</td>
-            <td scope='row'>{{s.email}}</td>
-            <td scope='row'>{{s.password}}</td>
-        </tr>
-        {% endfor %}
-      </table>
-{% else %}
-    <h2>no data found</h2>
-{% endif %}
-{% endblock content %}
+         <input type="submit" class="btn btn-primary" value="Save">
+        </form>
+    </div>
+ <div class="col-sm-7 offset-1">
+    <h4 class="text-center alert alert-info">show student information</h4>
+        {% if stub %}
+        <table class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                 {% for s in stub  %}
+                  <tr>
+                    <td>{{s.id}}</td>
+                    <td>{{s.name}}</td>
+                    <td>{{s.email}}</td>
+                    <td>{{s.password}}</td>
+                    <td>
+                        <form action="{% url "updatedata" s.id %}" method="post" class="d-inline">
+                          {% csrf_token %}
+                          <input type="submit" class="btn btn-warning" value="Edit">
+                        </form>
+                        <form action="{% url "deletedata" s.id %}" method="post" class="d-inline">
+                          {% csrf_token %}
+                          <input type="submit" class="btn btn-danger" value="delete">
+                        </form>
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+        </table>
+        {% else %}
+        <h4 class="text-center alert alert-warning">No Data</h4>
+        {% endif %}
 
+ </div>
+</div>
+
+
+{% endblock content %}
  
