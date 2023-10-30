@@ -19,10 +19,8 @@ def add_show(request):
           '''another way of saving data in DB is fm.save()'''
           reg = user(id=ld, name=nd, email=em, password=pd)
           reg.save()
+          messages.add_message(request, messages.SUCCESS, 'Student Add Succesfully')
           return HttpResponseRedirect('/')
-          #stu = user.objects.all()
-          #return render(request, 'enroll/addandshow.html', {'form':fm ,'stub':stu})
-          #return render(request, 'enroll/success.html')
     else:
       fm = userform()
       stu = user.objects.all()
