@@ -7,8 +7,7 @@ from enroll.models import user
 #def success(request):
 #   return render(request, 'enroll/success.html')
 
-def add_show(request):
-    print("view work correctly")
+def add_show(request):
     if request.method == 'POST':
        fm = userform(request.POST)
        if fm.is_valid():
